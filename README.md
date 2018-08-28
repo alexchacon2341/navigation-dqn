@@ -24,7 +24,7 @@ The state space has 37 dimensions and contains the agent's velocity, along with 
 - **`2`** - turn left.
 - **`3`** - turn right.
 
-### Getting Started
+### Instructions
 
 To begin, you will need to set up your Python environment by following the instructions below.
 
@@ -74,23 +74,4 @@ python -m ipykernel install --user --name drlnd --display-name "drlnd"
 
 
 
-### Instructions
-
 Follow the instructions in `Navigation.ipynb` to get started with training your own agent!  
-
-(_For AWS_) If you'd like to train the agent on AWS, you must follow the instructions to [set up X Server](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md), and then download the environment for the **Linux** operating system above.
-
-
-
-
-
-Create (and activate) a new environment with Python 3.6.
-Linux or Mac: conda create --name drlnd python=3.6 source activate drlnd
-
-Windows: conda create --name drlnd python=3.6 activate drlnd
-
-Follow the instructions in this repository to perform a minimal install of OpenAI gym.
-Next, install the classic control environment group by following the instructions here. Then, install the box2d environment group by following the instructions here.
-
-Clone the repository (if you haven't already!), and navigate to the python/ folder. Then, install several dependencies.
-git clone https://github.com/udacity/deep-reinforcement-learning.git cd deep-reinforcement-learning/python pip install . Create an IPython kernel for the drlnd environment. python -m ipykernel install --user --name drlnd --display-name "drlnd" Before running code in a notebook, change the kernel to match the drlnd environment by using the drop-down Kernel menu. Kernel
