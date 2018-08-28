@@ -1,8 +1,7 @@
 [//]: # (Image References)
 
 [image1]: https://user-images.githubusercontent.com/10624937/42135612-cbff24aa-7d12-11e8-9b6c-2b41e64b3bb0.gif "Trained Agent"
-[image2]: file:///Users/macintosh/Desktop/Screen%20Shot%202018-08-28%20at%201.07.44%20AM.png "Action Value Function"
-
+[image2]: https://lh3.googleusercontent.com/-a0Pu8tBE66A/W4TaVpHShPI/AAAAAAAAF6I/QNUld4w_-7AvXoN7J0TBkDb764qUwKcYACL0BGAs/w530-d-h42-n-rw/Screen%2BShot%2B2018-08-28%2Bat%2B1.07.44%2BAM.png "Action Value Function"
 
 # Report
 
