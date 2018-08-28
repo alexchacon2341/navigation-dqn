@@ -16,10 +16,10 @@ neural network (RNN), which uses ____ to ____.
 The agent interacts with its environment through a sequence of observations, 
 actions and rewards. The agent's goal is to select actions in a fashion that 
 maximizes cumulative future reward. More formally, an RNN is used to
-approximate the optimal action-value function
+approximate the optimal action-value function:
 
 ![Action Value Function][image2]
 
-which is the maximum sum of rewards *r<sub>t</sub>* discounted by *γ* at each timestep
+This function produces the maximum sum of rewards *r<sub>t</sub>* discounted by *γ* at each timestep
 *t*, achievable by a behaviour policy *π = P(a|s)*, after making an
 observation *(s)* and taking an action *(a)*.
