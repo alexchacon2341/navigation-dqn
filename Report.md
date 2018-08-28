@@ -11,8 +11,8 @@
 ### Methodology
 
 The project uses methods involving deep neural networks developed in a [2015 paper](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) to
-creat an artificial agent, termed a deep Q-network (DQN), that can
-use end-to-end reinforcement learning to solve an environment created by Unity's ML-Agents. The architecture used in this case is PyTorch's nn Module, a deep recurrent
+creat an artificial agent, termed a deep Q-network (DQN), that
+uses end-to-end reinforcement learning to solve an environment created by Unity's ML-Agents. The architecture used in this case is PyTorch's nn Module, a deep recurrent
 neural network (RNN) that is adept at defining computational graphs and taking gradients and is better for defining complex networks than raw autograd.
 
 The agent interacts with its environment through a sequence of observations, 
