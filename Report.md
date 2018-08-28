@@ -17,8 +17,8 @@ using end-to-end reinforcement learning. The architecture used in this case is P
 neural network (RNN) that is adept at defining computational graphs and taking gradients and is better for defining complex networks than raw autograd.
 
 The agent interacts with its environment through a sequence of observations, 
-actions, and rewards. The agent's goal is to select actions in a fashion that 
-maximizes cumulative future reward. More formally, an RNN is used to
+actions, and rewards. Its goal is to select actions in order to
+maximizes cumulative future reward. More formally, the RNN is used to
 approximate the optimal action-value function:
 
 ![Action Value Function][image2]
@@ -29,7 +29,7 @@ observation *(s)* and taking an action *(a)*.
 
 In order to correct for instability and even divergence when a nonlinear function approximator is used to represent the action-value function, a replay buffer is implemented. This buffer has two primary facets:
 
-1. An experience replay mechanism that randomizes over the dta, removing correlations in the observation space and smoothing over changes in the data distribution.
+1. An experience replay mechanism that randomizes over the data, removing correlations in the observation space and smoothing over changes in the data distribution.
 
 2. An iterative update that adjusts the action-values towards target values that are only periodically updated, reducing correlations with the target.
 
@@ -42,7 +42,7 @@ parameters *θ<sub>i</sub><sup>-</sup>* are only updated with the Q-network para
 
 ### Hyperparameters
 
-To best compare across environments, the hyperparemeters used were similar to those used in the [paper](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) on which the example was based. The algorithm from this research was able to a achieve a level of performance comparable to that of a professional human games tester across a set of 49 Atari games using the same hyperparameters, and these hyperparameters were used in the example to attempt similar results while using an RNN. The exact values and descriptions for each hyperparameter were as follows:
+To best compare across environments, the hyperparemeters used to generate the experiences in "nav_weights.pth" were similar to those used in the [paper](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) on which the algorithm was based. The algorithm from this research was able to a achieve a level of performance comparable to that of a professional human games tester across a set of 49 Atari games using the same hyperparameters, and these hyperparameters were used in the example to attempt similar results while using an RNN as opposed to a CNN (Convolutional Neural Network). Precise values and descriptions for each hyperparameter follow:
 
 ![Hyperparameters][image4]
 
@@ -52,4 +52,4 @@ Using these settings, the environment was solved in 497 episodes with an average
 
 ### Suggestions
 
-While the agent was able to converge on a policy that solved the environment in a relatively short period of time, improvements may still occur with additional changes. To increase the likelihood that the agent continues exploring different actions until the optimal policy has been found, it may be beneficial to implement a curriculum-type structure with gamma, ensuring its decay pauses at certain thresholds until a certain average reward is reached. Increasing the number of layers may also yield better results. Finally, extensions of the DQN algorithm, including Double DQN, Dueling DQN, or Rainbow may converge on a more optimal policy in a shorter period.
+While the agent was able to converge on a policy that solved the environment in a relatively short period of time, Additional changes may yield improvements. To increase the likelihood that the agent continues exploring different actions until the optimal policy has been found, it may be beneficial to implement gamma with a curriculum-type structure, ensuring its decay pauses at certain thresholds until a pre-specified average reward is reached. Increasing the number of layers may also yield better results. Finally, extensions of the DQN algorithm, including Double DQN, Dueling DQN, or Rainbow may converge on a more optimal policy in a shorter period.
