@@ -1,2 +1,4 @@
 # navigation-dqn
-Reinforcement Learning project for an environment in which an agent was trained with a DQN to find yellow bananas while avoiding blue bananas.
+A Reinforcement Learning project involving an environment in which an agent was trained to find yellow bananas while avoiding blue bananas with a DQN.
+OVERVIEW
+blahbalh
