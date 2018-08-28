@@ -23,3 +23,11 @@ approximate the optimal action-value function:
 This function produces the maximum sum of rewards *r<sub>t</sub>* discounted by *γ* at each timestep
 *t*, achievable by a behaviour policy *π = P(a|s)*, after making an
 observation *(s)* and taking an action *(a)*.
+
+In order to correct for instability and even divergence when a nonlinear function approximator is used to represent the action-value function, a replay buffer is implemented. This buffer has two primary facets:
+
+1. An experience replay mechanism that randomizes over the dta, removing correlations in the observation space and smoothing over changes in the data distribution.
+
+2. An iterative update that adjusts the action-values towards target values that are only periodically updated, reducing correlations with the target.
+
+To perform experience replay, the agent's experiences *e<sub>t</sub> = (s<sub>t</sub>, a<sub>t</sub>, r<sub>t</sub>, s<sub>t + 1</sub>)* are stored at each time-step *t* in a data set *D = {e<sub>1,...,</sub> e<sub>t</sub>}*.
