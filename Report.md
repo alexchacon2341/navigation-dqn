@@ -2,7 +2,7 @@
 
 [image1]: https://user-images.githubusercontent.com/10624937/42135612-cbff24aa-7d12-11e8-9b6c-2b41e64b3bb0.gif "Trained Agent"
 
-# Deep Q-Network (DQN)
+# Report
 
 ### Instructions
 
