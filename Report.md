@@ -17,7 +17,7 @@ using end-to-end reinforcement learning. The architecture used in this case is P
 neural network (RNN) that is adept at defining computational graphs and taking gradients and is better for defining complex networks than raw autograd.
 
 The agent interacts with its environment through a sequence of observations, 
-actions and rewards. The agent's goal is to select actions in a fashion that 
+actions, and rewards. The agent's goal is to select actions in a fashion that 
 maximizes cumulative future reward. More formally, an RNN is used to
 approximate the optimal action-value function:
 
