@@ -17,7 +17,7 @@ neural network (RNN) that is adept at defining computational graphs and taking g
 
 The agent interacts with its environment through a sequence of observations, 
 actions, and rewards. Its goal is to select actions in order to
-maximizes cumulative future reward. More formally, the RNN is used to
+maximize cumulative future reward. More formally, the RNN is used to
 approximate the optimal action-value function:
 
 ![Action Value Function][image2]
