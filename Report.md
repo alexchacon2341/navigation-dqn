@@ -35,4 +35,9 @@ To perform experience replay, the agent's experiences *e<sub>t</sub> = (s<sub>t<
 
 ![Loss Function][image3]
 
-In this function, *γ* is the discount factor determining the agent's horizon, *θ<sub>i</sub>* are the parameters of the Q-network at iteration *i* and *θ<sub>i</sub><sup>-</sup>*
+In this function, *γ* is the discount factor determining the agent's horizon, *θ<sub>i</sub>* are the parameters of the Q-network at iteration *i* and *θ<sub>i</sub><sup>-</sup>* are the network parameters used to compute the target at iteration *i*. The target network
+parameters *θ<sub>i</sub><sup>-</sup>* are only updated with the Q-network parameters *(θ<sub>i</sub>)* every *C* steps and are held fixed between individual updates.
+
+### Hyperparameters
+
+To best compare across environments, the hyperparemeters used were similar to those used in the [paper](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) on which this example was based. The algorithm from this research was able to a achieve a level of performance comparable to that of a professional human games tester across a set of 49 Atari games using the same hyperparameters, so they were used in the example to attempt similar results while using an RNN.
