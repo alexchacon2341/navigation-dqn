@@ -1,24 +1,26 @@
 [//]: # (Image References)
 
 [image1]: https://user-images.githubusercontent.com/10624937/42135612-cbff24aa-7d12-11e8-9b6c-2b41e64b3bb0.gif "Trained Agent"
+[image2]: file:///Users/macintosh/Desktop/Screen%20Shot%202018-08-28%20at%201.07.44%20AM.png "Action Value Function"
+
 
 # Report
 
-### Instructions
+### Methodology
 
-In this exercise, you will implement Deep Q-Learning to solve OpenAI Gym's LunarLander environment.  To begin, navigate to the `exercise/` folder, and follow the instructions in `Deep_Q_Network.ipynb`.
+The project uses recent advances in training deep neural networks to
+develop a novel artificial agent, termed a deep Q-network (DQN), that can
+learn successful policies directly from high-dimensional sensory inputs
+using end-to-end reinforcement learning. The architecture used is a deep recurrent
+neural network (RNN), which uses ____ to ____.
 
-(_Alternatively, if you'd prefer to explore a complete implementation, enter the `solution/` folder, and run the code in `Deep_Q_Network_Solution.ipynb`._)
+The agent interacts with its environment through a sequence of observations, 
+actions and rewards. The agent's goal is to select actions in a fashion that 
+maximizes cumulative future reward. More formally, an RNN is used to
+approximate the optimal action-value function
 
-After you are able to get the code working, try to change the parameters in the notebook, to see if you can get the agent to train faster!  You may also like to implement prioritized experience replay, or use it as a starting point to implement a Double DQN or Dueling DQN!
+![Action Value Function][image2]
 
-### Results
-
-![Trained Agent][image1]
-
-### Resources
-
-- [Human-Level Control through Deep Reinforcement Learning](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
-- [Deep Reinforcement Learning with Double Q-Learning](https://arxiv.org/abs/1509.06461)
-- [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581)
-- [Prioritized Experience Replay](https://arxiv.org/abs/1511.05952)
+which is the maximum sum of rewards r^t discounted by γ at each timestep
+*t*, achievable by a behaviour policy π = P(a|s), after making an
+observation (s) and taking an action (a).
