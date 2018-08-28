@@ -8,7 +8,7 @@
 
 This project is an example of deep reinforcement learning using a recurrent neural network (RNN). The coding framework was provided courtesy of Udacity's Deep Reinforcement Learning Nanodegree Program, with an environment created using Unity's ML-Agents plugin.
 
-In the example, an agent is trained using a Deep Q-Network (DQN) over a series of episodes. It begins with no knowledge of its environment, and first learns only by taking actions at random. The agent's experiences are catalogued and it gradually begins making decisions to maximize its reward instead of choosing random actions. The environment is solved once the agent achieves an average score of +13 over 100 consecutive episodes. The trained agent whose experiences are included in "nav_weights.pth" achieved an average score of 13.00 in 572 episodes.
+In the example, an agent is trained using a Deep Q-Network (DQN) over a series of episodes. It begins with no knowledge of its environment, and first learns only by taking actions at random. The agent's experiences are catalogued and it gradually begins making decisions to maximize its reward instead of choosing random actions. The environment is solved once the agent achieves an average score of +13 over 100 consecutive episodes.
 
 ### Environment
 
