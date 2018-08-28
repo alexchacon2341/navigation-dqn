@@ -12,7 +12,7 @@ In the example, an agent is trained using a Deep Q-Network (DQN) over a series o
 
 ### Environment
 
-In the environment, an agent is tasked with collecting bananas in a square world.
+In the environment, an agent is tasked with collecting bananas in a large, square world.
 
 ![Trained Agent][image1]
 
