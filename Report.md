@@ -20,6 +20,6 @@ approximate the optimal action-value function
 
 ![Action Value Function][image2]
 
-which is the maximum sum of rewards r<sub>t</sub> discounted by γ at each timestep
-*t*, achievable by a behaviour policy π = P(a|s), after making an
-observation (s) and taking an action (a).
+which is the maximum sum of rewards *r<sub>t</sub>* discounted by *γ* at each timestep
+*t*, achievable by a behaviour policy *π = P(a|s)*, after making an
+observation *(s)* and taking an action *(a)*.
