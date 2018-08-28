@@ -41,7 +41,7 @@ parameters *θ<sub>i</sub><sup>-</sup>* are only updated with the Q-network para
 
 ### Hyperparameters
 
-To best compare across environments, the hyperparemeters used to generate the experiences in "nav_weights.pth" were similar to those used in the [paper](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) on which the algorithm was based. The algorithm from this research was able to a achieve a level of performance comparable to that of a professional human games tester across a set of 49 Atari games using only one set of hyperparameters, and these hyperparameters were imitated to attempt similar results while using an RNN as opposed to a CNN (Convolutional Neural Network). Precise values and descriptions for each hyperparameter follow:
+To best compare across environments, the hyperparemeters used to generate the experiences in "nav_weights.pth" were similar to those used in the paper on which the algorithm was based. The algorithm from this research was able to a achieve a level of performance comparable to that of a professional human games tester across a set of 49 Atari games using only one set of hyperparameters, and these hyperparameters were imitated to attempt similar results while using an RNN as opposed to a CNN (Convolutional Neural Network). Precise values and descriptions for each hyperparameter follow:
 
 ![Hyperparameters][image4]
 
