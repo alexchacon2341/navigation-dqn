@@ -4,6 +4,7 @@
 [image2]: https://lh3.googleusercontent.com/-a0Pu8tBE66A/W4TaVpHShPI/AAAAAAAAF6I/QNUld4w_-7AvXoN7J0TBkDb764qUwKcYACL0BGAs/w530-d-h42-n-rw/Screen%2BShot%2B2018-08-28%2Bat%2B1.07.44%2BAM.png "Action Value Function"
 [image3]: https://lh3.googleusercontent.com/-OU0OBi7f0L4/W4TdiuPe4oI/AAAAAAAAF68/V9DJFw4fufERS5UfARVIFcRJNdkDogZigCL0BGAs/w530-d-h79-n-rw/Screen%2BShot%2B2018-08-28%2Bat%2B1.28.17%2BAM.png "Loss Function"
 [image4]: https://lh3.googleusercontent.com/-y8LZqmVuCW8/W4ToZiIV8bI/AAAAAAAAF7s/21hHC4Z9KKQZBwalr52NQyn9LLRCoiZPACL0BGAs/w530-d-h260-n-rw/Screen%2BShot%2B2018-08-28%2Bat%2B2.14.30%2BAM.png "Hyperparameters"
+[image5]: https://lh3.googleusercontent.com/-OxVI2XxvLB0/W4TpYJ8cyLI/AAAAAAAAF8M/-mo-HiacK9UvR95d_g9rnffMTkjv4ZtxgCL0BGAs/w530-d-h357-n-rw/Screen%2BShot%2B2018-08-28%2Bat%2B1.35.00%2BAM.png "Plot"
 
 # Report
 
@@ -44,3 +45,11 @@ parameters *θ<sub>i</sub><sup>-</sup>* are only updated with the Q-network para
 To best compare across environments, the hyperparemeters used were similar to those used in the [paper](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf) on which the example was based. The algorithm from this research was able to a achieve a level of performance comparable to that of a professional human games tester across a set of 49 Atari games using the same hyperparameters, and these hyperparameters were used in the example to attempt similar results while using an RNN. The exact values and descriptions for each hyperparameter were as follows:
 
 ![Hyperparameters][image4]
+
+Using these settings, the environment was solved in 497 episodes with an average consecutive reward of +13.01. The following plot shows the agent's progress throughout the training session:
+
+![Plot][image5]
+
+### Suggestions
+
+While the agent was able to converge on a policy that solved the environment in a relatively short period of time, improvements may still occur with additional changes. To increase the likelihood that the agent continues exploring different actions until the optimal policy has been found, it may be beneficial to implement a curriculum-type structure with gamma, ensuring its decay pauses at certain thresholds until a certain average reward is reached. Increasing the number of layers may also yield better results. Finally, extensions of the DQN algorithm, including Double DQN, Dueling DQN, or Rainbow may converge on a more optimal policy in a shorter period.
