@@ -10,8 +10,8 @@
 
 ### Methodology
 
-The project uses recent advances in training deep neural networks to
-develop a novel artificial agent, termed a deep Q-network (DQN), that can
+The project uses deep neural networks to
+develop an artificial agent, termed a deep Q-network (DQN), that can
 learn successful policies directly from high-dimensional sensory inputs
 using end-to-end reinforcement learning. The architecture used in this case is PyTorch's nn Module, a deep recurrent
 neural network (RNN) that is adept at defining computational graphs and taking gradients and is better for defining complex networks than raw autograd.
