@@ -35,4 +35,4 @@ To perform experience replay, the agent's experiences *e<sub>t</sub> = (s<sub>t<
 
 ![Loss Function][image3]
 
-
+In this function, *γ* is the discount factor determining the agent's horizon, *θ<sub>i</sub>* are the parameters of the Q-network at iteration *i* and *θ<sub>i</sub><sup>-</sup>*
